@@ -1,0 +1,13 @@
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+//  FOOTER
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+.footer {
+    height: 147px;
+    background-color: #EEEEEE;
+    padding-top: 48px;
+    &__bottom {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}

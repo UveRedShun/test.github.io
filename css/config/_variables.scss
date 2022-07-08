@@ -1,0 +1,86 @@
+@import "../base/mixin.scss";
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+//  SETTINGS
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pc {
+  display: block;
+  @include mq(sp) {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+  @include mq(sp) {
+    display: block;
+  }
+}
+
+
+//  FONT
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
+//  FONT SIZE
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$font-size-xxs: 0.5rem;
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-xxl: 1.875rem;
+
+.text-xxs {
+  font-size: $font-size-xxs;
+}
+
+.text-xs {
+  font-size: $font-size-xs;
+}
+
+.text-sm {
+  font-size: $font-size-sm;
+}
+
+.text-md {
+  font-size: $font-size-md;
+}
+
+.text-lg {
+  font-size: $font-size-lg;
+}
+
+.text-xl {
+  font-size: $font-size-xl;
+}
+
+.text-xxl {
+  font-size: $font-size-xxl;
+}
+
+
+//  COLOR 
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+$black: #000;
+$white: #fff;
+
+.black {
+  color: $black;
+}
+.white{
+  color: $white;
+}
+
+//  WIDTH
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$pc_width: 1400px;
+$sp_width: 390px;
