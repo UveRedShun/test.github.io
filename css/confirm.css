@@ -32,6 +32,7 @@ div#confirm_field h2 {
 	width: 90%;
 	margin: 0 auto;
 	padding: 25px 0;
+	border-bottom: 1px solid #cccccc;
 	font-size: 135%;
 	font-weight: bold;
 	text-align: center;
@@ -40,7 +41,7 @@ div#confirm_field h2 {
 div#confirm_field dl {
 	width: 90%;
 	margin: 0 auto;
-	border: 1px solid #707070;
+	border-bottom: 1px solid #cccccc;
 	font-size: 18px;
 }
 
@@ -55,16 +56,14 @@ div#confirm_field dl:after {
 div#confirm_field dl dt {
 	width: 40%;
 	float: left;
-	padding: 25px 27px;
-	text-align: left;
-	background-color: #EEEEEE;
-	border-right: 1px solid #707070;
+	padding: 25px 0;
+	text-align: right;
 }
 
 div#confirm_field dl dd {
 	width: 60%;
 	float: right;
-	padding: 25px 0 25px 28px;
+	padding: 25px 0 25px 5%;
 	text-align: left;
 }
 
@@ -74,16 +73,16 @@ div#confirm_field dl dd {
 /* -- button -------------------------------------------------------------------------------- */
 
 div#confirm_field p#confirm_submit {
-	width: 826px;
+	width: 90%;
 	margin: 0 auto;
 	padding: 25px 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 div#confirm_field input[type="button"] {
 	padding: 7px 20px;
-	border-radius: 10px;
+	border-radius: 50px;
 	font-size: 24px;
 	color: #ffffff;
 	font-family: inherit;
@@ -91,29 +90,30 @@ div#confirm_field input[type="button"] {
 	box-shadow: 5px 5px 0 #ececec;
 	height: 70px;
 	width: 100%;
-	max-width: 398px;
+	max-width: 200px;
 }
 
 div#confirm_field input#confirm_submit_button {
-	background: #0DB99F;
-	border: 1px solid #fff;
+	background: #5cb85c;
+	border: 1px solid #4cae4c;
 }
 
 div#confirm_field input#confirm_submit_button:hover {
 	cursor: pointer;
-	background: #0DB99F;
-	border: 1px solid #fff;
+	background: #449d44;
+	border: 1px solid #398439;
 }
 
 div#confirm_field input#confirm_cancel_button {
-	background: #999999;
-	border: 1px solid #fff;
+	background: #d9534f;
+	border: 1px solid #d43f3a;
+	margin-left: 20px;
 }
 
 div#confirm_field input#confirm_cancel_button:hover {
 	cursor: pointer;
-	background: #999999;
-	border: 1px solid #fff;
+	background: #c9302c;
+	border: 1px solid #ac2925;
 }
 
 
@@ -125,8 +125,8 @@ div#confirm_field input#confirm_cancel_button:hover {
 
 /* -- responsive ----------------------------------------------------------------------------------------------------------------------- */
 
-/* 768pixel start */
-@media screen and ( max-width: 768px ) {
+/* 1000pixel start */
+@media screen and ( max-width: 1000px ) {
 
 
 /* -- div#confirm_field, dl, dt, dd -------------------------------------------------------------------------------- */
@@ -151,8 +151,6 @@ div#confirm_field dl dt {
 	padding: 25px 0 5px;
 	text-align: left;
 	font-weight: bold;
-	border-right: 0px;
-	border-bottom: 1px solid #707070;
 }
 
 div#confirm_field dl dt:before {
@@ -166,7 +164,7 @@ div#confirm_field dl dt:after {
 div#confirm_field dl dd {
 	width: auto;
 	float: none;
-	padding: 0px 0 25px 10px;
+	padding: 0px 0 25px 0px;
 }
 
 
@@ -174,21 +172,13 @@ div#confirm_field dl dd {
 
 /* -- button -------------------------------------------------------------------------------- */
 
-div#confirm_field p#confirm_submit {
-	width: 90%;
-	margin: 0 auto;
-	padding: 25px 0;
-	display: flex;
-	justify-content: center;
-}
-
 div#confirm_field input#confirm_submit_button {
-	margin-left: 10px;
+	margin-left: 0;
 }
 
 
 }
-/* 768pixel end */
+/* 1000pixel end */
 
 
 

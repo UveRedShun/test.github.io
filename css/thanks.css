@@ -1,0 +1,94 @@
+@charset "utf-8";
+html {
+	font-size: 62.5%;
+}
+
+body {
+    font-family: 'Arial', 'Kosugi Maru', sans-serif;
+}
+
+div#thanks {
+	max-width: 1000px;
+	margin: 50px auto;
+	padding: 30px 0;
+	background: #ffffff;
+	line-height: 1.8;
+	text-align: center;
+}
+
+div#thanks h1,
+div#thanks h2 {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 4rem;
+	font-weight: bold;
+	border-bottom: 1px solid #454545;
+}
+
+div#thanks p {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 2em;
+	font-size: 1.8rem;
+}
+
+/* -- button -------------------------------------------------------------------------------- */
+
+div#thanks .thanks-btn {
+	max-width: 640px;
+	text-align: center;
+	padding: 30px;
+	margin: 2.3em auto 0;
+}
+
+div#thanks .thanks-btn a {
+	font-size: 2.4rem;
+	padding: 18px 20%;
+	letter-spacing: 10px;
+	border-radius: 50px;
+	background: #999999;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	-webkit-appearance: none;
+	box-shadow: 5px 5px 0 #ececec;
+}
+
+div#thanks .thanks-btn a:hover {
+	cursor: pointer;
+	background: #808080;
+}
+
+
+/* -- responsive ----------------------------------------------------------------------------------------------------------------------- */
+
+/* 1000pixel start */
+@media screen and ( max-width: 767px ) {
+
+	div#thanks {
+		text-align: left;
+	}
+
+	div#thanks h1,
+	div#thanks h2 {
+		font-size: 3.6rem;
+}
+
+	div#thanks p {
+		font-size: 2.3rem;
+	}
+
+	div#thanks p br {
+		display: none;
+	}
+
+}
+/* 1000pixel end */
+
+
+
+
+
+
+
+

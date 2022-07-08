@@ -1,41 +1,44 @@
-$(function(){
-  //.accordion_oneの中の.accordion_headerがクリックされたら
-  $('.acditem .acditem__hd').click(function(){
-    $(this).next('.acditem__inner').slideToggle();
-    $(this).toggleClass("open");
-  });
-  /* page_top arrow設定 */
-  var $arrowBtn = $('#page_top');
-  var isHidden = true;
-  $arrowBtn.hide();
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 240) {
-      if (isHidden) {
-        $arrowBtn.stop(true, true).fadeIn(200);
-        isHidden = false;
-      }
-    } else {
-      if (!isHidden) {
-        $arrowBtn.stop(true, true).fadeOut();
-        isHidden = true;
-      }
-    }
-  });
-  $arrowBtn.click(function () {
-    $('html, body').animate({
-      'scrollTop': 0
-    }, 1000);
+function PageTopAnime() {
+	var scroll = $(window).scrollTop();
+	if (scroll >= 200) {
+		$('#page-top').removeClass('RightMove');
+		$('#page-top').addClass('LeftMove');
+	}else{
+		if($('#page-top').hasClass('LeftMove')) {
+			$('#page-top').removeClass('LeftMove');
+			$('#page-top').addClass('RightMove');
+		}
+	}
+}
+
+$('#page-top').on('click',function() {
+	var scroll = $(window).scrollTop();
+	if(scroll > 0){
+		$(this).addClass('floatAnime');
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800,function() {
+            $('#page-top').removeClass('floatAnime');
+        });	
+	}
     return false;
-  });
-  /* プライバシーポリシー設定 */
-  $('#ppbox').change(function() {
-    // チェックが入っていたら有効化
-    if ( $(this).is(':checked') ){ 
-        // ボタンを有効化
-        $('#form_submit_button').prop('disabled', false);
-    } else { 
-        // ボタンを無効化
-        $('#form_submit_button').prop('disabled', true); 
-    }
-  });
+});
+
+/*===========================================================*/
+/* スクロール */
+/*===========================================================*/
+$(function(){
+	$('a[href^="#"]').on('click',function() {
+		var speed = 500;
+		var href= $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		var headerHight = 100;
+		var position = target.offset().top - headerHight;
+		$("html, body").animate({scrollTop:position}, speed, "swing");
+		return false;
+	});
+});
+
+$(window).on('scroll',function () {
+    PageTopAnime();
 });
