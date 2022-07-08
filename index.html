@@ -416,108 +416,126 @@
             </div>
         </section>
 
-        <section id="mailform" class="mailform">
-            <div class="mailform__contents">
-                <h2 class="mailform__ttl">お問い合わせ</h2>
-                <form action="php/mailform.php" method="post" id="mail_form">
-                    <dl class="mailform__contents-form mailform__contents-input">
-                        <dt><span>必須</span>お名前</dt>
-                        <dd class="required"><input type="text" name="name_1" value="" /></dd>
-                    </dl>
+        <section id="cp-form">
+			<p class="cp-form-title">
+				<img src="images/title_form.png" alt="ご利用までの流れ">
+			</p>
+			<p class="cp-form-toiawase">下記フォームよりお問い合わせください。</p>
+			<div id="form-wrapper">
+				<form action="php/mailform.php" method="post" id="mail_form">		
+					<dl>
+						<dt><i></i>お名前</dt>
+						<dd class="required"><input type="text" name="name_1" value="" /></dd>
+					</dl>
+					
+					<dl>
+						<dt><i></i>フリガナ</dt>
+						<dd class="required"><input type="text" name="read" value="" /></dd>
+					</dl>
 
-                    <dl class="mailform__contents-input">
-                        <dt><span>必須</span>フリガナ</dt>
-                        <dd class="required"><input type="text" name="read" value="" /></dd>
-                    </dl>
+					<dl>
+						<dt><i></i>電話番号</dt>
+						<dd class="required"><input type="tel" name="phone" value="" />
+							<p class="chusyaku">※日中のご連絡先</p>
+						</dd>
+					</dl>
 
-                    <dl class="mailform__contents-input">
-                        <dt><span>必須</span>電話番号</dt>
-                        <dd class="required"><input type="tel" name="phone" value="" /></dd>
-                    </dl>
-
-                    <dl class="mailform__contents-input">
-                        <dt><span>必須</span>ご住所</dt>
-                        <dd class="required"><input type="text" name="address" value="" /></dd>
-                    </dl>
-
-                    <dl class="mailform__contents-input">
-                        <dt><span>必須</span>メールアドレス</dt>
-                        <dd class="required"><input type="email" name="mail_address" value="" /></dd>
-                    </dl>
-
-                    <dl class="mailform__contents-select">
-                        <dt><span>必須</span>ご興味があるサービス</dt>
-                        <dd class="required">
-                            <ul>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" class="CheckboxInput" name="kind[]" value="C+スポーツパック" />
-                                        <div class="CheckboxInput-LabelText">
-                                            <p>C+スポーツパック</p>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" class="CheckboxInput" name="kind[]" value="C+スタンダードパック" />
-                                        <div class="CheckboxInput-LabelText">
-                                            <p>C+スタンダードパック</p>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" class="CheckboxInput" name="kind[]" value="C+エンタメパック" />
-                                        <div class="CheckboxInput-LabelText">
-                                            <p>C+エンタメパック</p>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" class="CheckboxInput" name="kind[]" value="C+パック・シンプル" />
-                                        <div class="CheckboxInput-LabelText">
-                                            <p>C+パック・シンプル</p>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" class="CheckboxInput" name="kind[]" value="その他サービスについて詳しく知りたい" />
-                                        <div class="CheckboxInput-LabelText">
-                                            <p>その他サービスについて詳しく知りたい</p>
-                                        </div>
-                                    </label>
-                                </li>
-                            </ul>
-                        </dd>
-                    </dl>
-                    <dl class="mailform__pp">
-                        <dd class="required">
-                            <ul>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" id="ppbox" class="CheckboxInput" name="ppbox" value="プライバシーポリシーについて同意する" />
-                                        <div class="CheckboxInput-LabelText">
-                                            <p>プライバシーポリシーについて同意する</p>
-                                        </div>
-                                    </label>
-                                </li>
-                            </ul>
-                        </dd>
-                    </dl>
-                    <div id="form_submit" class="mailform__submit"><input type="button" id="form_submit_button" name="submitbtn" value="確認画面へ進む" disabled/></div>
-                </form>
-                <div id="confirm_field">
-                    <h2>以下の内容で送信してよろしいですか？</h2>
-                    <div id="confirm_window"></div>
-                    <p id="confirm_submit">
-                        <input type="button" id="confirm_cancel_button" value="戻る" />
-                        <input type="button" id="confirm_submit_button" value="送信する" />
-                    </p>
-                </div>
-            </div>
-        </section>
+					<dl>
+						<dt><i></i>ご住所</dt>
+						<dd class="required"><input type="text" name="address" value="" />
+							<p class="chusyaku">
+								※郵便番号は不要です。<br>
+								※集合住宅にお住まいの方は、アパート・マンション名・お部屋番号までご記入ください。
+							</p>
+						</dd>
+					</dl>
+					
+					<dl>
+						<dt><i></i>メールアドレス</dt>
+						<dd class="required"><input type="email" name="mail_address" value="" /></dd>
+					</dl>
+					
+					<dl>
+						<dt><i></i>ご検討中のサービス</dt>
+						<dd class="required">
+							<ul>
+								<li>
+									<label>
+										<input type="checkbox" class="CheckboxInput" name="kind[]" value="ワイワイひかりテレビ" />
+										<span class="CheckboxInput-DummyInput"></span>
+										<div class="CheckboxInput-LabelText">
+											<p>ワイワイひかりテレビ</p>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="CheckboxInput" name="kind[]" value="ワイワイひかりネット" />
+										<span class="CheckboxInput-DummyInput"></span>
+										<div class="CheckboxInput-LabelText">
+											<p>ワイワイひかりネット</p>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="CheckboxInput" name="kind[]" value="ワイワイひかり電話" />
+										<span class="CheckboxInput-DummyInput"></span>
+										<div class="CheckboxInput-LabelText">
+											<p>ワイワイひかり電話</p>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="CheckboxInput" name="kind[]" value="ワイワイケーブルモバイル" />
+										<span class="CheckboxInput-DummyInput"></span>
+										<div class="CheckboxInput-LabelText">
+											<p>ワイワイケーブルモバイル</p>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="CheckboxInput" name="kind[]" value="ワイワイでんき" />
+										<span class="CheckboxInput-DummyInput"></span>
+										<div class="CheckboxInput-LabelText">
+											<p>ワイワイでんき</p>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="checkbox" class="CheckboxInput" name="kind[]" value="U30割" />
+										<span class="CheckboxInput-DummyInput"></span>
+										<div class="CheckboxInput-LabelText">
+											<p>U30割</p>
+										</div>
+									</label>
+									<p class="chusyaku">
+										※U30割は集合住宅にお住まいの18歳～29歳までの方が対象です。<br>
+									</p>
+									<p class="fs-16">
+										【テレビとネットのセットコース】<br>
+										※以下のコースは｢ワイワイひかりテレビ｣｢ワイワイひかりネット｣をご選択ください。<br>
+										・スマートテレビプラスSコース<br>
+										・スマートテレビプラスコース<br>
+										・プレミアム4K簡録コース+ワイワイひかり<br>
+										・プレミアム4Kコース+ワイワイひかり
+									</p>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+						<p class="privacy">
+							<a href="https://www.wainet.co.jp/privacypolicy/" target="_blank" rel="noopener">
+								個人情報保護に関する宣言
+							</a>
+						</p>
+					<p id="form_submit"><input type="button" id="form_submit_button" value="確認する" /></p>	
+				</form>
+			</div>
+		</section>
 
         <footer class="footer">
             <div class="footer__inner">
