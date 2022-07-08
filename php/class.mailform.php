@@ -434,7 +434,7 @@ class Mailform {
 		
 		$set_body  = PHP_EOL;
 		$set_body .= '-----------------------------------------------------------------------------------'.PHP_EOL;
-		// $set_body .= PHP_EOL;
+		$set_body .= PHP_EOL;
 		$set_body .= '【送信時刻】'.PHP_EOL;
 		$set_body .= $send_date;
 		
@@ -447,7 +447,7 @@ class Mailform {
 			if ( $this->post_isset[$i] !== '' ) {
 				if ( $this->order_isset[$i][2] === 'false' ) {
 					
-					// $set_body .= PHP_EOL;
+					$set_body .= PHP_EOL;
 					$set_body .= PHP_EOL;
 					$set_body .= '【'.$this->order_isset[$i][3].'】'.PHP_EOL;
 					$set_body .= $this->post_isset[$i];
@@ -458,7 +458,7 @@ class Mailform {
 						$set_body .= '　'.$this->post_isset[$i];
 					} else {
 						
-						// $set_body .= PHP_EOL;
+						$set_body .= PHP_EOL;
 						$set_body .= PHP_EOL;
 						$set_body .= '【'.$this->order_isset[$i][3].'】'.PHP_EOL;
 						$set_body .= $this->post_isset[$i];
@@ -473,7 +473,7 @@ class Mailform {
 		
 		if ( $set === 'send' ) {
 			
-			// $set_body .= PHP_EOL;
+			$set_body .= PHP_EOL;
 			$set_body .= PHP_EOL;
 			$set_body .= '-----------------------------------------------------------------------------------'.PHP_EOL;
 			$set_body .= PHP_EOL;
@@ -492,9 +492,9 @@ class Mailform {
 			$set_body .= '【メールフォームのURL】'.PHP_EOL;
 			$set_body .= $this->now_url.''.PHP_EOL;
 			$set_body .= PHP_EOL;
-			// $set_body .= '【メールフォームのページの直前に見たURL】'.PHP_EOL;
-			// $set_body .= $this->before_url.''.PHP_EOL;
-			// $set_body .= PHP_EOL;
+			$set_body .= '【メールフォームのページの直前に見たURL】'.PHP_EOL;
+			$set_body .= $this->before_url.''.PHP_EOL;
+			$set_body .= PHP_EOL;
 			
 			if ( file_exists( dirname( __FILE__ ) .'/../addon/writing-time/writing-ok.php' ) ) {
 				include( dirname( __FILE__ ) .'/../addon/writing-time/writing-ok.php' );
@@ -502,7 +502,7 @@ class Mailform {
 			
 		} else {
 			
-			// $set_body .= PHP_EOL;
+			$set_body .= PHP_EOL;
 			$set_body .= PHP_EOL;
 			$set_body .= '-----------------------------------------------------------------------------------'.PHP_EOL;
 			$set_body .= $this->thanks_body_signature;

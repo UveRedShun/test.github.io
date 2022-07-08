@@ -14,7 +14,7 @@ class Mailform_Js {
 	
 	
 	// scroll addon property
-	private $scroll_amount         = 100;
+	private $scroll_amount         = 70;
 	
 	
 	// label addon property

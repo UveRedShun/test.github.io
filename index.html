@@ -1,530 +1,237 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" dir="ltr">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA74589956-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }
-gtag('js', new Date());
-gtag('config', 'UA-74589956-1', {
-'accept_incoming': true,
-'linker': {
-'domains': ['wainet.co.jp', 'net-cp.com']
-}
-});
-gtag('config', 'AW-10785821162');
-</script>
-<!-- End Google Analytics -->
-<!--Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NBNTK7L');</script>
-<!--End Google Tag Manager -->
-<!-- 【Yahoo！】サイトジェネラルタグ・コンバージョン測定補完機能タグ -->
-<script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
-<script>
-window.yjDataLayer = window.yjDataLayer || [];
-function ytag() { yjDataLayer.push(arguments); }
-ytag({"type":"ycl_cookie"});
-</script>
-
 <meta charset="UTF-8" />
-<title>冬の大感謝キャンペーン｜ケーブルメディアワイワイ</title>
-<meta name="description" content="冬の大感謝キャンペーン!期間内の新規お申し込みでNetflixにご加入いただくと工事費＋初期費用通常79,200円が0円!他社ネットからの乗り換えで解約金が発生した場合最大30,000円キャッシュバック!!">
+<title>レスポンシブメールフォームのサンプル</title>
+<meta name="robots" content="noindex,nofollow" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<meta name="format-detection" content="telephone=no">
+
+
+
+
+<!-- 既存サイトに組み込む場合に不要なCSSここから -->
 <link rel="stylesheet" href="css/reset.css" />
+<style>
+body {
+	color: #454545;
+	font-family: sans-serif;
+	background: #f0f0f0;
+}
+</style>
+<!-- 既存サイトに組み込む場合に不要なCSSここまで -->
+
+
+
+
 <link rel="stylesheet" href="css/mailform.css" />
-<link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/confirm.css" />
-<!--=============Google Font ===============-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
-<!--=============Google Font ===============-->
+
+
+
+
+<!-- ご希望の日時選択ライブラリここから -->
+<link rel="stylesheet" href="css/jquery.datetimepicker.css" />
+<!-- ご希望の日時選択ライブラリここまで -->
+
+
+
+
 </head>
 <body>
-<!--Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBNTK7L"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!--End Google Tag Manager (noscript) -->
 
-	<main id="main">
-		<header>
-			<div class="wrapper">
-				<div class="hd-inner">
-					<div class="hd-logo">
-						<a href="https://www.wainet.co.jp/" target="_blank" rel="noopener">
-							<img src="images/btn_logo.png" alt="ケーブルメディアワイワイ">
-						</a>
-					</div>
-					<div class="hd-contact">
-						<div class="hd-tel-pc none-sp">
-							<div>
-								<img src="images/img_tel_header.png" alt="0800-123-8181/携帯からは0982-22-1500">
-							</div>
-						</div>
-						<div class="hd-tel-sp none-pc">
-							<a href="tel:0982221500" onclick="gtag('event', 'lp2201', {'event_category': 'KPI', 'event_label': 'tel_head'});">
-								<img src="images/btn_tel_header_sp.png" alt="電話で問い合わせる">
-							</a>
-						</div>
-						<div class="hd-btn">
-							<a href="#cp-form">
-								<div>
-									<img src="images/btn_soudan_header.png" alt="まずはご相談">
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<div id="cp-title">
-			<h1 class="cp-logo">
-				<img src="images/title_logo.png" alt="冬の大感謝キャンペーン">
-			</h1>
-			<div class="cp-logo-date">
-				<img src="images/img_cpkikan.png" alt="キャンペーン期間:2022年1月4日〜2月28日">
-			</div>
-		</div>
-		<section id="cp-otoku">
-			<div class="wrapper">
-				<div class="cp-otoku-inner">
-					<picture>
-						<source srcset="images/chara_otoku_pc.png" media="(min-width: 768px)">
-						<img src="images/chara_otoku_sp.png" alt="くまさんと雪だるま">
-					</picture>
-					<div class="cp-otoku-contents">
-						<h2>
-							<img src="images/title_otoku.png" alt="日頃の感謝を込めて、おトクな特典をご用意!!ワイワイでこの冬を楽しく過ごそう!">
-						</h2>
-						<div class="cp-otoku-item">
-							<div>
-								<img src="images/img_otoku01.png" alt="期間内の新規お申し込みでNetflixにご加入いただくと工事費＋初期費用通常79,200円が0円!">
-							</div>
-							<div>
-								<img src="images/img_otoku02.png" alt="他社ネットからの乗り換えで解約金が発生した場合最大30,000円キャッシュバック!!">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<div class="cp-btn">
-			<div class="cp-btn-soudan">
-			  	<a href="#cp-form">
-					<picture>
-				  		<source srcset="images/btn_soudan_pc.png" media="(min-width: 768px)">
-				  		<img src="images/btn_soudan_sp.png" alt="まずはご相談">
-					</picture>
-			  	</a>
-			</div>
-			<div class="cp-tel-sp none-pc">
-			  	<a href="tel:0982221500" onclick="gtag('event', 'lp2201', {'event_category': 'KPI', 'event_label': 'tel_1'});">
-					<img src="images/btn_tel_sp.png" alt="電話で問い合わせる">
-			  	</a>
-			</div>
-			<div class="cp-tel-pc none-sp">
-			  	<img src="images/img_tel.png" alt="0800-123-8181/携帯からは0982-22-1500">
-			</div>
-		</div>
 
-		<section id="cp-service">
-			<div class="cp-service-inner">
-				<div class="cp-service-title">
-					<picture>
-						<source srcset="images/title_service_pc.png" media="(min-width: 768px)">
-						<img src="images/title_service_sp.png" alt="この冬はワイワイで暮らしを楽しく快適に!あなたのスタイルにピッタリのサービスがきっとみつかります!">
-					</picture>
-				</div>
-				<div class="cp-service-contents">
-					<div class="contents_01">
-						<picture class="cp-service-stp">
-							<source srcset="images/img_stvplus_01_pc.png" media="(min-width: 768px)">
-							<img src="images/img_stvplus_01_sp.png" alt="テレビもネット動画もあきらめたくない!おうち時間を充実させたいあなたへ スマートテレビプラスコース">
-						</picture>
-						<picture class="cp-service-course">
-							<source srcset="images/img_stvplus_02_pc.png" media="(min-width: 768px)">
-							<img src="images/img_stvplus_02_sp.png" alt="スマートテレビプラスSコース 月額料金9,240円 通信速度120Mbps">
-						</picture>
-						<picture class="cp-service-course">
-							<source srcset="images/img_stvplus_03_pc.png" media="(min-width: 768px)">
-							<img src="images/img_stvplus_03_sp.png" alt="スマートテレビプラスコース 月額料金9,790円 通信速度1Gbps">
-						</picture>
-						<picture>
-							<source srcset="images/img_stvplus_04_pc.png" media="(min-width: 768px)">
-							<img src="images/img_stvplus_04_sp.png" alt="ご契約された方に!テレビ番組録画用の外付けHDD(2TB)をプレゼント!">
-						</picture>
-						<picture>
-							<source srcset="images/img_stvplus_05_pc.png" media="(min-width: 768px)">
-							<img src="images/img_stvplus_05_sp.png" alt="テレビの特長 テレビの大画面で動画配信サービスが楽しめる!/4Kの番組が見られる!/テレビ69chが視聴可能に!/音声検索、操作が可能!/トリプルチューナー搭載!">
-						</picture>
-						<picture>
-							<source srcset="images/img_stvplus_06_pc.png" media="(min-width: 768px)">
-							<img src="images/img_stvplus_06_sp.png" alt="OTTセット割で、動画配信サービス(Netflix,Hulu,DAZN)をワイワイのご利用料金とまとめてお支払いいただくと、毎月110円割引!">
-						</picture>
-					</div>
-				</div>
-				<div class="cp-service-contents">
-					<div class="contents_02">
-						<picture class="cp-service-tv-net">
-							<source srcset="images/img_tv-net_01_pc.png" media="(min-width: 768px)">
-							<img src="images/img_tv-net_01_sp.png" alt="テレビを録画して好きな時間に楽しみたい!ネットもおトクに使いたいあなたへ テレビ&ひかりインターネット[Wi-Fi]">
-						</picture>
-						<picture class="cp-service-course">
-							<source srcset="images/img_tv-net_02_pc.png" media="(min-width: 768px)">
-							<img src="images/img_tv-net_02_sp.png" alt="4K簡録&ワイワイひかりS 月額料金8,360円 通信速度120Mbps">
-						</picture>
-						<picture class="cp-service-course">
-							<source srcset="images/img_tv-net_03_pc.png" media="(min-width: 768px)">
-							<img src="images/img_tv-net_03_sp.png" alt="4K簡録&ワイワイひかり 月額料金8,910円 通信速度1Gbps">
-						</picture>
-						<picture>
-							<source srcset="images/img_tv-net_04_pc.png" media="(min-width: 768px)">
-							<img src="images/img_tv-net_04_sp.png" alt="テレビの特長 テレビの大画面で動画配信サービスが楽しめる!/最大1,610時間の録画が可能![地デジ7倍圧縮時]/4Kの番組が見られる!/トリプルチューナー搭載!/テレビ69chが視聴可能に!">
-						</picture>
-					</div>
-				</div>
-				<div class="cp-service-contents">
-					<div class="contents_03">
-						<picture class="cp-service-net">
-							<source srcset="images/img_net_01_pc.png" media="(min-width: 768px)">
-							<img src="images/img_net_01_sp.png" alt="ストレスフリーでおうち中サクサクネットを楽しみたいあなたへ ひかりインターネット[Wi-Fi]">
-						</picture>
-						<picture class="cp-service-course">
-							<source srcset="images/img_net_02_pc.png" media="(min-width: 768px)">
-							<img src="images/img_net_02_sp.png" alt="ワイワイひかりS 月額料金4,730円 通信速度120Mbps">
-						</picture>
-						<picture class="cp-service-course">
-							<source srcset="images/img_net_03_pc.png" media="(min-width: 768px)">
-							<img src="images/img_net_03_sp.png" alt="ワイワイひかり 月額料金4,840円 通信速度1Gbps">
-						</picture>
-						<picture>
-							<source srcset="images/img_net_04_pc.png" media="(min-width: 768px)">
-							<img src="images/img_net_04_sp.png" alt="テレビの特長 インターネット検索やSNSを楽しめる!/オンラインゲームや動画配信サービスを楽しめる!/光インターネットが最短10日で利用可能/Wi-Fi初期設定無料(プリンタ・スマホ・PCなど1台のみ)">
-						</picture>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<div class="cp-btn">
-			<div class="cp-btn-soudan">
-			  	<a href="#cp-form">
-					<picture>
-				  		<source srcset="images/btn_soudan_pc.png" media="(min-width: 768px)">
-				  		<img src="images/btn_soudan_sp.png" alt="まずはご相談">
-					</picture>
-			  	</a>
-			</div>
-			<div class="cp-tel-sp none-pc">
-			  	<a href="tel:0982221500" onclick="gtag('event', 'lp2201', {'event_category': 'KPI', 'event_label': 'tel_2'});">
-					<img src="images/btn_tel_sp.png" alt="電話で問い合わせる">
-			  	</a>
-			</div>
-			<div class="cp-tel-pc none-sp">
-			  	<img src="images/img_tel.png" alt="0800-123-8181/携帯からは0982-22-1500">
-			</div>
-		</div>
+<form action="php/mailform.php" method="post" id="mail_form">
+	
+	<dl>
+		<dt><i></i>会社名</dt>
+		<dd><input type="text" name="company" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>名前</dt>
+		<dd class="required"><input type="text" name="name_1" value="" /> <input type="text" name="name_2" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>ふりがな</dt>
+		<dd><input type="text" name="read_1" value="" /> <input type="text" name="read_2" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>メールアドレス</dt>
+		<dd class="required"><input type="email" name="mail_address" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>メールアドレス(確認用)</dt>
+		<dd><input type="email" name="mail_address_confirm" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>性別</dt>
+		<dd>
+			<ul>
+				<li><label><input type="radio" name="gender" value="男性" />男性</label></li>
+				<li><label><input type="radio" name="gender" value="女性" />女性</label></li>
+			</ul>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>恋愛対象</dt>
+		<dd>
+			<ul>
+				<li><label><input type="radio" name="target" value="男性" />男性</label></li>
+				<li><label><input type="radio" name="target" value="女性" />女性</label></li>
+			</ul>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>郵便番号</dt>
+		<dd class="required"><input type="text" name="postal" value="" onkeyup="AjaxZip3.zip2addr( this,'','address','address' );" />　<a href="http://www.post.japanpost.jp/zipcode/" target="_blank">郵便番号検索</a></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>住所</dt>
+		<dd><input type="text" name="address" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>電話番号</dt>
+		<dd><input type="tel" name="phone" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>ご希望の日時</dt>
+		<dd class="required"><input type="text" name="schedule" value="" readonly="readonly" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>ご希望の商品</dt>
+		<dd>
+			<select name="product">
+				<option value="">選択してください</option>
+				<option value="iPhone4">iPhone4</option>
+				<option value="iPhone4s">iPhone4s</option>
+				<option value="iPhone5">iPhone5</option>
+				<option value="iPhone5s">iPhone5s</option>
+				<option value="iPhone6">iPhone6</option>
+				<option value="iPhone6 Plus">iPhone6 Plus</option>
+				<option value="iPhone6s">iPhone6s</option>
+				<option value="iPhone6s Plus">iPhone6s Plus</option>
+				<option value="iPhone7">iPhone7</option>
+				<option value="iPhone7 Plus">iPhone7 Plus</option>
+			</select>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>ご使用中の商品</dt>
+		<dd>
+			<select name="use">
+				<option value="">選択してください</option>
+				<option value="iPhone4">iPhone4</option>
+				<option value="iPhone4s">iPhone4s</option>
+				<option value="iPhone5">iPhone5</option>
+				<option value="iPhone5s">iPhone5s</option>
+				<option value="iPhone6">iPhone6</option>
+				<option value="iPhone6 Plus">iPhone6 Plus</option>
+				<option value="iPhone6s">iPhone6s</option>
+				<option value="iPhone6s Plus">iPhone6s Plus</option>
+				<option value="iPhone7">iPhone7</option>
+				<option value="iPhone7 Plus">iPhone7 Plus</option>
+				<option value="その他">その他</option>
+			</select>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>お問い合わせの種類</dt>
+		<dd>
+			<ul>
+				<li><label><input type="checkbox" name="kind[]" value="WEBサイトについて" />WEBサイトについて</label></li>
+				<li><label><input type="checkbox" name="kind[]" value="商品について" />商品について</label></li>
+				<li><label><input type="checkbox" name="kind[]" value="キャンペーンについて" />キャンペーンについて</label></li>
+				<li><label><input type="checkbox" name="kind[]" value="採用について" />採用について</label></li>
+				<li><label><input type="checkbox" name="kind[]" value="ご意見・ご要望" />ご意見・ご要望</label></li>
+				<li><label><input type="checkbox" name="kind[]" value="交際希望" />交際希望</label></li>
+			</ul>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>返信方法のご希望</dt>
+		<dd>
+			<ul>
+				<li><label><input type="checkbox" name="response[]" value="電話での返信を希望" />電話での返信を希望</label></li>
+				<li><label><input type="checkbox" name="response[]" value="メールでの返信を希望" />メールでの返信を希望</label></li>
+				<li><label><input type="checkbox" name="response[]" value="返信不要" />返信不要</label></li>
+			</ul>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>お問い合わせの内容</dt>
+		<dd class="required"><textarea name="contents" cols="40" rows="5"></textarea></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>愛の告白</dt>
+		<dd><textarea name="message" cols="40" rows="5"></textarea></dd>
+	</dl>
+	
+	<p id="form_submit"><input type="button" id="form_submit_button" value="送信する" /></p>
+	
+</form>
 
-		<section id="cp-osusume">
-			<div class="cp-osusume-inner">
-				<div class="cp-osusume-contents">
-					<p class="cp-osusume-title">
-						<img src="images/title_osusume.png" alt="ワイワイのおすすめポイント!">
-					</p>
-					<div class="cp-osusume-point">
-						<picture class="cp-osusume-item">
-							<source srcset="images/img_osusume01_pc.png" media="(min-width: 768px)">
-							<img src="images/img_osusume01_sp.png" alt="【安心】地元企業ならではの地域密着体制でお困りごとに親身にご対応いたします!">
-						</picture>
-						<picture class="cp-osusume-item">
-							<source srcset="images/img_osusume02_pc.png" media="(min-width: 768px)">
-							<img src="images/img_osusume02_sp.png" alt="【おトク】テレビやネット、電話など、ワイワイサービスをまとめてご利用いただくと大変お得になります。">
-						</picture>
-						<picture>
-							<source srcset="images/img_osusume03_pc.png" media="(min-width: 768px)">
-							<img src="images/img_osusume03_sp.png" alt="【快適】テレビ:アンテナ不要で天候の影響を受けにくく、快適にご利用いただけます。/ネット:おうち全体がWi-Fi環境になり、使い放題!サクサク快適に楽しめます。">
-						</picture>
-					</div>
-				</div>
-			</div>
-			<div class="cp-osusume-chara">
-				<picture>
-					<source srcset="images/chara_osusume_pc.png" media="(min-width: 768px)">
-					<img src="images/chara_osusume_sp.png" alt="くまさんとうさぎさん">
-				</picture>
-			</div>
-		</section>
 
-		<section id="cp-u30">
-			<div class="cp-u30-inner">
-				<p class="cp-u30-logo">
-					<img src="images/title_u30_logo.png" alt="U30割">
-				</p>
-				<div class="cp-u30-contents">
-					<p class="cp-u30-title">
-						<img src="images/title_u30.png" alt="集合住宅にお住まいの18歳～29歳までの方はさらにおトク!">
-					</p>
-					<div class="cp-u30-course">
-						<img src="images/img_u30_01.png" alt="30歳の誕生月までテレビorネット利用の場合:月額880円割引!">
-						<img src="images/img_u30_02.png" alt="30歳の誕生月までテレビ+ネット同時利用の場合:月額1,760円割引!">
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<div class="cp-btn">
-			<div class="cp-btn-soudan">
-			  	<a href="#cp-form">
-					<picture>
-				  		<source srcset="images/btn_soudan_pc.png" media="(min-width: 768px)">
-				  		<img src="images/btn_soudan_sp.png" alt="まずはご相談">
-					</picture>
-			  	</a>
-			</div>
-			<div class="cp-tel-sp none-pc">
-			  	<a href="tel:0982221500" onclick="gtag('event', 'lp2201', {'event_category': 'KPI', 'event_label': 'tel_3'});">
-					<img src="images/btn_tel_sp.png" alt="電話で問い合わせる">
-			  	</a>
-			</div>
-			<div class="cp-tel-pc none-sp">
-			  	<img src="images/img_tel.png" alt="0800-123-8181/携帯からは0982-22-1500">
-			</div>
-		</div>
-
-		<section id="cp-riyuu">
-			<div class="cp-riyuu-inner">
-				<picture class="cp-riyuu-title">
-					<source srcset="images/title_riyuu_pc.png" media="(min-width: 768px)">
-					<img src="images/title_riyuu_sp.png" alt="ワイワイが選ばれる理由">
-				</picture>
-				<div class="cp-riyuu-contents">
-					<picture class="cp-riyuu-item">
-						<source srcset="images/img_riyuu01_pc.png" media="(min-width: 768px)">
-						<img src="images/img_riyuu01_sp.png" alt="地元だから安心!わからないことは電話・ご訪問ですぐに解決。お使いのインターネットやテレビがトラブルを起こした場合もご安心ください。弊社スタッフが無料で出張サポートに伺います。">
-					</picture>
-					<picture class="cp-riyuu-item">
-						<source srcset="images/img_riyuu02_pc.png" media="(min-width: 768px)">
-						<img src="images/img_riyuu02_sp.png" alt="設定作業は全部おまかせ。新規でお申込みいただいたお客様には、弊社スタッフがインターネットとWi-Fiの設定を無料で行います。（1台のみ）設定が苦手な方でも安心してお申込みいただけます。">
-					</picture>
-					<picture>
-						<source srcset="images/img_riyuu03_pc.png" media="(min-width: 768px)">
-						<img src="images/img_riyuu03_sp.png" alt="初期費用が無料。期間内の新規お申し込みでNetflixにご加入いただくと工事費＋初期費用通常79,200円が0円!キャンペーン期間:2022年1月4日〜2月28日">
-					</picture>
-				</div>
-			</div>
-		</section>
-
-		<section id="cp-nagare">
-			<div class="cp-nagare-inner">
-				<p class="cp-nagare-title">
-					<img src="images/title_nagare.png" alt="ご利用までの流れ">
-				</p>
-				<div class="cp-nagare-contents">
-					<picture>
-						<source srcset="images/img_nagare01_pc.png" media="(min-width: 768px)">
-						<img src="images/img_nagare01_sp.png" alt="STEP01:お申込み 下記フォームよりお申込みをお願いいたします。">
-					</picture>
-					<picture>
-						<source srcset="images/img_nagare02_pc.png" media="(min-width: 768px)">
-						<img src="images/img_nagare02_sp.png" alt="STEP02:プランのご提案 お客様のご利用方法にあったプランをご提案いたします。">
-					</picture>
-					<picture>
-						<source srcset="images/img_nagare03_pc.png" media="(min-width: 768px)">
-						<img src="images/img_nagare03_sp.png" alt="STEP03:ご契約 ご契約時に工事の内容や、日程まで確定いたします。">
-					</picture>
-					<picture>
-						<source srcset="images/img_nagare04_pc.png" media="(min-width: 768px)">
-						<img src="images/img_nagare04_sp.png" alt="STEP04:工事 当社指定の工事担当者がご自宅に伺い作業をいたします。">
-					</picture>
-					<picture>
-						<source srcset="images/img_nagare05_pc.png" media="(min-width: 768px)">
-						<img src="images/img_nagare05_sp.png" alt="STEP05:ご利用開始 工事が完了したその日からサービスをご利用いただけます。">
-					</picture>
-				</div>
-			</div>
-		</section>
-
-		<section id="cp-qa">
-			<div class="cp-qa-inner">
-				<p class="cp-qa-title">
-					<img src="images/title_qa.png" alt="よくあるご質問">
-				</p>
-				<div class="cp-qa-contents">
-					<picture>
-						<source srcset="images/img_qa01_pc.png" media="(min-width: 768px)">
-						<img src="images/img_qa01_sp.png" alt="Q.契約プランや内容が複雑でよくわかりません A.ご安心ください。お客様のご希望に合わせたベストプランをご提案いたします。現在無料相談受付中です。">
-					</picture>
-					<picture>
-						<source srcset="images/img_qa02_pc.png" media="(min-width: 768px)">
-						<img src="images/img_qa02_sp.png" alt="Q.現在、他社プロバイダーに加入しています。乗り換えの特典などありますか？ A.はい!他社プロバイダーから乗り換える場合、最大30,000円（税込）のキャッシュバックをいたします。※他社解約に伴い、解約金が発生した場合">
-					</picture>
-					<picture>
-						<source srcset="images/img_qa03_pc.png" media="(min-width: 768px)">
-						<img src="images/img_qa03_sp.png" alt="Q.初期費用が高いのではないかと心配です A.ご安心ください。今なら初期費用無料キャンペーンを実施中です。※適用には条件がございます。また施工内容によっては別途費用がかかります。詳しくはお問い合わせください。">
-					</picture>
-					<picture>
-						<source srcset="images/img_qa04_pc.png" media="(min-width: 768px)">
-						<img src="images/img_qa04_sp.png" alt="Q.インターネット初心者です。Wi-Fi設定とか難しそうで心配です A.ご安心ください。専門スタッフがしっかりとサポートいたします。開通時のWi-Fi設定などは、ご自宅訪問し設定いたします。">
-					</picture>
-				</div>
-			</div>
-		</section>
-
-		<section id="cp-form">
-			<p class="cp-form-title">
-				<img src="images/title_form.png" alt="ご利用までの流れ">
-			</p>
-			<p class="cp-form-toiawase">下記フォームよりお問い合わせください。</p>
-			<div id="form-wrapper">
-				<form action="php/mailform.php" method="post" id="mail_form">		
-					<dl>
-						<dt><i></i>お名前</dt>
-						<dd class="required"><input type="text" name="name_1" value="" /></dd>
-					</dl>
-					
-					<dl>
-						<dt><i></i>フリガナ</dt>
-						<dd class="required"><input type="text" name="read" value="" /></dd>
-					</dl>
-
-					<dl>
-						<dt><i></i>電話番号</dt>
-						<dd class="required"><input type="tel" name="phone" value="" />
-							<p class="chusyaku">※日中のご連絡先</p>
-						</dd>
-					</dl>
-
-					<dl>
-						<dt><i></i>ご住所</dt>
-						<dd class="required"><input type="text" name="address" value="" />
-							<p class="chusyaku">
-								※郵便番号は不要です。<br>
-								※集合住宅にお住まいの方は、アパート・マンション名・お部屋番号までご記入ください。
-							</p>
-						</dd>
-					</dl>
-					
-					<dl>
-						<dt><i></i>メールアドレス</dt>
-						<dd class="required"><input type="email" name="mail_address" value="" /></dd>
-					</dl>
-					
-					<dl>
-						<dt><i></i>ご検討中のサービス</dt>
-						<dd class="required">
-							<ul>
-								<li>
-									<label>
-										<input type="checkbox" class="CheckboxInput" name="kind[]" value="ワイワイひかりテレビ" />
-										<span class="CheckboxInput-DummyInput"></span>
-										<div class="CheckboxInput-LabelText">
-											<p>ワイワイひかりテレビ</p>
-										</div>
-									</label>
-								</li>
-								<li>
-									<label>
-										<input type="checkbox" class="CheckboxInput" name="kind[]" value="ワイワイひかりネット" />
-										<span class="CheckboxInput-DummyInput"></span>
-										<div class="CheckboxInput-LabelText">
-											<p>ワイワイひかりネット</p>
-										</div>
-									</label>
-								</li>
-								<li>
-									<label>
-										<input type="checkbox" class="CheckboxInput" name="kind[]" value="ワイワイひかり電話" />
-										<span class="CheckboxInput-DummyInput"></span>
-										<div class="CheckboxInput-LabelText">
-											<p>ワイワイひかり電話</p>
-										</div>
-									</label>
-								</li>
-								<li>
-									<label>
-										<input type="checkbox" class="CheckboxInput" name="kind[]" value="ワイワイケーブルモバイル" />
-										<span class="CheckboxInput-DummyInput"></span>
-										<div class="CheckboxInput-LabelText">
-											<p>ワイワイケーブルモバイル</p>
-										</div>
-									</label>
-								</li>
-								<li>
-									<label>
-										<input type="checkbox" class="CheckboxInput" name="kind[]" value="ワイワイでんき" />
-										<span class="CheckboxInput-DummyInput"></span>
-										<div class="CheckboxInput-LabelText">
-											<p>ワイワイでんき</p>
-										</div>
-									</label>
-								</li>
-								<li>
-									<label>
-										<input type="checkbox" class="CheckboxInput" name="kind[]" value="U30割" />
-										<span class="CheckboxInput-DummyInput"></span>
-										<div class="CheckboxInput-LabelText">
-											<p>U30割</p>
-										</div>
-									</label>
-									<p class="chusyaku">
-										※U30割は集合住宅にお住まいの18歳～29歳までの方が対象です。<br>
-									</p>
-									<p class="fs-16">
-										【テレビとネットのセットコース】<br>
-										※以下のコースは｢ワイワイひかりテレビ｣｢ワイワイひかりネット｣をご選択ください。<br>
-										・スマートテレビプラスSコース<br>
-										・スマートテレビプラスコース<br>
-										・プレミアム4K簡録コース+ワイワイひかり<br>
-										・プレミアム4Kコース+ワイワイひかり
-									</p>
-								</li>
-							</ul>
-						</dd>
-					</dl>
-						<p class="privacy">
-							<a href="https://www.wainet.co.jp/privacypolicy/" target="_blank" rel="noopener">
-								個人情報保護に関する宣言
-							</a>
-						</p>
-					<p id="form_submit"><input type="button" id="form_submit_button" value="確認する" /></p>	
-				</form>
-			</div>
-		</section>
-
-		<section id="cp-caution">
-			<div class="cp-caution-inner">
-				<p>
-					※1 2年間の定期契約期間（自動更新）がございます。期間内での解約には違約金が必要です。 ※2 月額料金には、NHK衛星カラー受信料は含まれておりません。 ※3 ベストエフォート型サービスです。カタログ数値は最大速度となり、値はお客様宅内に設置する回線終端から当社設備までの間における技術規格上の最大値であり、お客様宅内での実使用速度を示すものではありません。通信サービス利用時の速度は、お客様のご利用環境・回線のトラフィック状況等により大幅に低下する場合があります。※お住まいの地域・設備によってはご利用いただけない場合がございます。詳しくはお問い合わせください。※スマートテレビプラス（地デジ）コースの通信速度は、お住まいの地域や住宅タイプ等により、120Mbpsでのご提供となる場合がございます。 ※4 U30割の適用については各種条件がございます。U30割は集合住宅にお住まいの方限定となります。また、割引の対象期間はご契約者様が30歳になる誕生月までとなります。誕生月翌月からU30割の割引が除外された料金に自動的に変更させていただきます。ご契約には、ご契約者様の年齢及び契約住所での居住が証明できる書類のご提出(コピー可)が必要です。<br>※表記の価格は全て税込価格です
-				</p>
-			</div>
-		</section>
-
-		<footer id="footer">
-			<div class="footer-inner">
-				<p>Copyright©Cable media waiwai Co,ltd.All right reserved. <br>掲載の記事・写真などの無断複写・転載等を禁じます</p>
-				<p id="page-top"><a href="#">Top</a></p>
-			</div>
-		</footer>
-	</main>
-	<!-- 確認画面 -->
-	<div id="confirm_field">
-		<h2>以下の内容で送信してよろしいですか？</h2>
-		<div id="confirm_window"></div>
-		<p id="confirm_submit">
-			<input type="button" id="confirm_submit_button" value="送信する" />
-			<input type="button" id="confirm_cancel_button" value="戻る" />
-		</p>
-	</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/mailform-js.php"></script>
-<script src="js/script.js"></script>
+
+
+
+
+<!-- フリガナ自動入力ライブラリここから -->
+<script src="js/jquery.autoKana.js"></script>
+<script>
+	(function( $ ) {
+		$.fn.autoKana( 'input[name="name_1"]', 'input[name="read_1"]', {
+			katakana: false
+		});
+		$.fn.autoKana( 'input[name="name_2"]', 'input[name="read_2"]', {
+			katakana: false
+		});
+	})( jQuery );
+</script>
+<!-- フリガナ自動入力ライブラリここまで -->
+
+
+
+
+<!-- 住所自動入力ライブラリここから -->
+<script src="js/ajaxzip3.js"></script>
+<!-- 住所自動入力ライブラリここまで -->
+
+
+
+
+<!-- ご希望の日時選択ライブラリここから -->
+<script src="js/jquery.datetimepicker.js"></script>
+<script>
+	(function( $ ) {
+		$( 'input[name="schedule"]' ).datetimepicker({
+			lang: 'ja'
+		});
+	})( jQuery );
+</script>
+<!-- ご希望の日時選択ライブラリここまで -->
+
+
+
+
 </body>
 </html>
